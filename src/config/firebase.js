@@ -1,0 +1,23 @@
+import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword,onAuthStateChanged,signOut} from "firebase/auth";
+
+
+const firebaseApp = initializeApp({
+    apiKey: "AIzaSyDeUSsXA3Mikbc_lDZeYfNf-EgQp-yXVns",
+authDomain: "react-app-firebase1.firebaseapp.com",
+projectId: "react-app-firebase1",
+storageBucket: "react-app-firebase1.appspot.com",
+messagingSenderId: "895555046264",
+appId: "1:895555046264:web:6e14b79d38e16d223c568d",
+measurementId: "G-1C39GZ8DE0"
+});
+
+const auth = getAuth();
+
+export {
+    auth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut
+}
